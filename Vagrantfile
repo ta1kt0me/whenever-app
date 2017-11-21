@@ -68,6 +68,9 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
-    apt-get install -y cron git
+    apt-get install -y cron git ruby
+    gem i bundler
+    [ -d /var/app ] || mkdir /var/app
+    chown vagrant:vagrant /var/app
   SHELL
 end
