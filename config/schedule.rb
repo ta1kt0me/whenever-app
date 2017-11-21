@@ -18,3 +18,6 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+every 10.minute do
+  command "date >> tmp/text.txt"
+end
