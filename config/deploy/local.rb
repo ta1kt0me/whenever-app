@@ -1,4 +1,4 @@
-server "127.0.0.1", user: "vagrant"
+server "127.0.0.1", user: "vagrant", roles: %w{db}
 
 set :ssh_options, {
   user: 'vagrant',
