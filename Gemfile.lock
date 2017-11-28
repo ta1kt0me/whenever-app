@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/ta1kt0me/whenever
+  revision: bc6d65b19a6a356dfe026ae26879ba3c869a4b92
+  branch: release_path_default
+  specs:
+    whenever (0.10.0)
+      chronic (>= 0.6.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -22,8 +30,6 @@ GEM
     sshkit (1.15.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    whenever (0.10.0)
-      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
@@ -31,7 +37,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   capistrano-bundler
-  whenever
+  whenever!
 
 BUNDLED WITH
    1.16.0
